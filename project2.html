@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>secondproject</title>
+    <style>
+         *{
+            background-color: black;
+         }
+         input{
+            background-color: white;
+            color: black;
+            padding: 10px ;
+            border-radius: 50px;
+         }
+         p{
+            color: black;
+            background-color: yellow;
+            padding: 5px 80px 5px 80px;
+
+         }
+         output{
+            align-items: center;
+            background-color: rgb(201, 103, 103);
+         }
+         .all{
+            margin-left: 400px;
+            margin-right: 400px;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <input type="text" placeholder="Enter Something..." id="myInput">
+        <div class="output">
+            <p class="keyPressed">Key pressed :</p>
+            <p class="keyCode">Key Code :</p>
+            <p class="charCode">Key char :</p>
+            <p class="eventType">Event Type :</p>
+        </div>
+    </div>
+    <script>
+        const handlekeypress = (event) => {
+            console.log(event);
+// display information about event in keyboard
+            console.log("key pressed :",event.key);
+            console.log("key code :",event.code);
+            console.log("key type :",event.type);
+
+            document.querySelector(".keyPressed").textContent = `key pressed : ${event.key}`;
+            document.querySelector(".keyCode").textContent = `key code : ${event.code}`;
+            document.querySelector(".charCode").textContent = `key char : ${event.key.charCodeAt(0)}`;
+            document.querySelector(".eventType").textContent = `key type : ${event.type}`;
+        };
+        let myInput = document.getElementById("myInput");
+        myInput.addEventListener("keydown", handlekeypress);
+    </script>
+</body>
+
+</html>
