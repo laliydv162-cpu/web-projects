@@ -1,0 +1,48 @@
+body {
+    background-image: linear-gradient(to right, rgb(92, 145, 229), rgb(152, 63, 198));
+    position: relative;
+    left: 500px;
+    top: 150px;
+}
+
+#btn1 {
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid white;
+    box-shadow: 2px 5px 1px black;
+    background-color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#btn2 {
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid white;
+    box-shadow: 2px 5px 1px black;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-gap {
+    display: flex;
+    gap: 100px;
+
+}
+
+.copyCode {
+    border: 3px solid transparent;
+    width: 350px;
+    height: 60px;
+    background-color: transparent;
+    box-shadow: 2px 2px 6px black;
+    color: white;
+    font-size: 20px;
+
+}
+
+h2 {
+    color: white;
+    margin-left: 30px;
+}
